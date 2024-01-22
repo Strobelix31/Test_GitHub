@@ -36,7 +36,9 @@ public class Circle extends Product{
 	}
 
 	public String toString() {
-		return "|" + this.radius + "|" + this.pi + "|"; 
+		return "| Radius: " + this.radius + " | Pi: " + this.pi + " |" + "\n" +
+				"Umfang beträgt: " + this.calculateCircumferences() + "\n" + 
+				"Fläche beträgt: " + this.calculateCircumferences() ; 
 	}
 	
 }

@@ -92,6 +92,8 @@ public class Triangle extends Product {
 	}
 
 	public String toString() {
-		return "|" + this.pageLength + "|" + this.height + "|" + this.siteA + "|" + this.siteB + "|" + this.siteC + "|"; 
+		return "| Pagelength: " + this.pageLength + " | Höhe: " + this.height + " | Seite a:" + this.siteA + " | Seite b:" + this.siteB + " | Seite c:" + this.siteC + " |"
+				+ "\n" + "Umfang beträgt: " + this.calculateCircumferences()
+				+ "\n" + "Fläche beträgt: " + this.calculateArea(); 
 	}
 }

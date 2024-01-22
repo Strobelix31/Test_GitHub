@@ -1,5 +1,7 @@
 package geoMetry;
 
+import java.util.Collection;
+
 public abstract class Product {
 
 	private double x;

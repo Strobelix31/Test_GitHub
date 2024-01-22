@@ -50,9 +50,9 @@ public class Rectangle extends Product{
 	
 	
 	public String toString() {
-		return "| Länge: " + this.length + " | Breite: " + this.width + " |" + "\n" + "Umfang beträgt: " +
-		this.calculateCircumferences() + "\n" + "Fläche beträgt: " +
-		this.calculateArea() ; 
+		return "| Länge: " + this.length + " | Breite: " + this.width + " |" + "\n" + 
+				"Umfang beträgt: " + this.calculateCircumferences() + "\n" + 
+				"Fläche beträgt: " + this.calculateArea() ; 
 	}	 
 	
 }

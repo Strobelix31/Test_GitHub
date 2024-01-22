@@ -1,6 +1,7 @@
 package geoMetry;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Group {
 
@@ -28,5 +29,22 @@ public class Group {
 			circumference += p.calculateCircumferences();
 		}
 		return circumference;
+	}
+	
+	public void printProduct(){
+		for(Product p : this.product) {
+			System.out.println(p);
+		}
+	}
+	
+	public double highestArea() {
+		double max = 0;
+		for (Product p : this.product) {
+		if(p.calculateArea()>max) {
+			max = p.calculateArea();
+			System.out.println("Biggest Body: " + p.toString());
+			}
+		}
+		return max;
 	}
 }
