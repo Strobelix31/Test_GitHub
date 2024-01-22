@@ -2,7 +2,9 @@ package geoMetry;
 
 public class Circle extends Product{
 	
-	public double radius;
+	private double radius;
+	public final double pi = 3.14;
+	
 
 	public Circle(double x, double y, double radius) {
 		super();
@@ -11,16 +13,30 @@ public class Circle extends Product{
 		this.setY(y);
 	}
 	
+	public double getRadius() {
+		return radius;
+	}
+	
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
+
+	public double getPi() {
+		return pi;
+	}
+
 	@Override
 	public double calculateCircumferences() {
-		// TODO Auto-generated method stub
-		return 0;
+		return (2 * this.radius) * this.pi;
 	}
 
 	@Override
 	public double calculateArea() {
-		// TODO Auto-generated method stub
-		return 0;
+		return (this.radius * this.radius) * this.pi;
 	}
 
+	public String toString() {
+		return "|" + this.radius + "|" + this.pi + "|"; 
+	}
+	
 }
