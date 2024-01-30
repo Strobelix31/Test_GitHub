@@ -1,14 +1,12 @@
 package socialNetwork;
 
-import java.util.ArrayList;
-
 public class PhotoEntry extends Entry {
 
     private String filename;
     private String headline;
 
-    public PhotoEntry(String author, long timestamp, int likes, String filename, String headline, ArrayList<String> comment) {
-        super(author, timestamp, likes, comment);
+    public PhotoEntry(String author, String filename, String headline) {
+        super(author);
         this.filename = filename;
         this.headline = headline;
     }
