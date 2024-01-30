@@ -1,12 +1,15 @@
 package socialNetwork;
 
+import java.util.ArrayList;
+
 public abstract class Entry {
 
     private String author;
     private long timestamp;
     private int likes;
+    private ArrayList<Comment> comment;
 
-    public Entry(String author, long timestamp, int likes) {
+    public Entry(String author, long timestamp, int likes, ArrayList<String> comment) {
         this.author = author;
         this.timestamp = timestamp;
         this.likes = likes;
@@ -36,5 +39,13 @@ public abstract class Entry {
         this.likes = likes;
     }
 
-    public abstract String toString();
+	public ArrayList<Comment> getComment() {
+		return comment;
+	}
+
+	public void setComment(ArrayList<Comment> comment) {
+		this.comment = comment;
+	}
+	
+	public abstract String toString();
 }

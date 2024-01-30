@@ -1,11 +1,13 @@
 package socialNetwork;
 
+import java.util.ArrayList;
+
 public class TextEntry extends Entry {
 
     private String text;
 
-    public TextEntry(String author, long timestamp, int likes, String text) {
-        super(author, timestamp, likes);
+    public TextEntry(String author, long timestamp, int likes, ArrayList<String> comment, String text) {
+        super(author, timestamp, likes, comment);
         this.text = text;
     }
 
