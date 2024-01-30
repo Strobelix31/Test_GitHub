@@ -14,6 +14,7 @@ public abstract class Entry {
         this.author = author;
         this.timestamp = LocalDate.now();
         this.likes = 0;
+        this.comment = new ArrayList<>();
     }
 
     public String getAuthor() {
@@ -48,5 +49,18 @@ public abstract class Entry {
 		this.comment = comment;
 	}
 	
+	/**
+	 * added a method to add a like
+	 */
+	public void addLike() {
+		this.likes += 1;
+	}
+	
+	/**
+	 * added a method to remove a like
+	 */
+	public void removeLike() {
+		this.likes -= 1;
+	}
 	public abstract String toString();
 }

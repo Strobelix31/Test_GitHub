@@ -7,12 +7,16 @@ public class NewsFeed {
 
     private List<Entry> entries;
 
+    /**
+     * Creates a new news feed; The news feed is initially empty
+     */
     public NewsFeed() {
         entries = new ArrayList<>();
     }
+    
     /**
      * method to create new entries 
-     * @param entry
+     * @param the entry to be added
      */
     public void addEntry(Entry entry) {
         entries.add(entry);
@@ -27,8 +31,8 @@ public class NewsFeed {
     }
 
     /**
-     * method to get a entry
-     * @return
+     * Returns the collection of entries
+     * @return the collection of entries
      */
     public List<Entry> getEntries() {
         return entries;
@@ -42,6 +46,7 @@ public class NewsFeed {
             System.out.println(entry);
         }
     }
+    
     /**
      * method to find the entries
      * @param author
