@@ -34,6 +34,7 @@ public class NewsFeed {
             if (entry.getAuthor().equals(author)) {
                 results.add(entry);
             }
+            System.out.println(this.findEntriesByAuthor(author));
         }
         return results;
     }
