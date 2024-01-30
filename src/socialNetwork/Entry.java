@@ -62,5 +62,23 @@ public abstract class Entry {
 	public void removeLike() {
 		this.likes -= 1;
 	}
+	
+	/**
+	 * method to create a comment
+	 * @param c 
+	 */
+	public void createComments (Comment c) {
+		this.comment.add(c);
+	}
+	
+	/**
+	 * method to remove a comment
+	 * @param c
+	 */
+	public void removeComments (Comment c) {
+		this.comment.remove(c);
+	}
+	
+
 	public abstract String toString();
 }
