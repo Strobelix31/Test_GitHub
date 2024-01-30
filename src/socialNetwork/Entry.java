@@ -1,6 +1,7 @@
 package socialNetwork;
 
 import java.time.LocalDate;
+import java.time.Period;
 import java.util.ArrayList;
 
 public abstract class Entry {
@@ -79,6 +80,12 @@ public abstract class Entry {
 		this.comment.remove(c);
 	}
 	
-
+	/**
+	 * method to calculate the TimeSpan
+	 */
+	public void calculateTimeSpan() {
+		Period timeSpan = Period.between(timestamp, LocalDate.now());
+		System.out.println(timeSpan);
+	}
 	public abstract String toString();
 }
