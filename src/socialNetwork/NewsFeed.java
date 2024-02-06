@@ -5,7 +5,7 @@ import java.util.List;
 
 public class NewsFeed {
 
-    private List<Entry> entries;
+    private ArrayList<Entry> entries;
 
     /**
      * Creates a new news feed; The news feed is initially empty
@@ -41,10 +41,12 @@ public class NewsFeed {
     /** 
      * Outputs all entries in a collection of entries
      */
-    public void printEntries() {
+    public void printEntries(String author) {
         for (Entry entry : entries) {
+        	if(entry.getAuthor().equals(author)) {
             System.out.println(entry);
         }
+       }
     }
     
     /**
