@@ -34,7 +34,7 @@ public class NewsFeed {
      * Returns the collection of entries
      * @return the collection of entries
      */
-    public List<Entry> getEntries() {
+    public ArrayList<Entry> getEntries() {
         return entries;
     }
     
@@ -54,8 +54,8 @@ public class NewsFeed {
      * @param author
      * @return the result
      */
-    public List<Entry> findEntriesByAuthor(String author) {
-        List<Entry> results = new ArrayList<>();
+    public ArrayList<Entry> findEntriesByAuthor(String author) {
+        ArrayList<Entry> results = new ArrayList<>();
         for (Entry entry : entries) {
             if (entry.getAuthor().equals(author)) {
                 results.add(entry);
@@ -70,8 +70,8 @@ public class NewsFeed {
      * @param author
      * @return the result
      */
-    public List<Entry> findPhotosByAuthor(String author) {
-        List<Entry> results = new ArrayList<>();
+    public ArrayList<Entry> findPhotosByAuthor(String author) {
+        ArrayList<Entry> results = new ArrayList<>();
         for (Entry entry : entries) {
             if (entry instanceof PhotoEntry && entry.getAuthor().equals(author)) {
                 results.add(entry);
