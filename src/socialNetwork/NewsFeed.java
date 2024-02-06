@@ -6,12 +6,12 @@ import java.util.List;
 public class NewsFeed {
 
     private ArrayList<Entry> entries;
-
+    
     /**
      * Creates a new news feed; The news feed is initially empty
      */
     public NewsFeed() {
-        entries = new ArrayList<>();
+        this.entries = new ArrayList<Entry>();
     }
     
     /**

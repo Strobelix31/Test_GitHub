@@ -23,4 +23,7 @@ public class Comment {
 		this.message = message;
 	}
 
+	public String toString(){
+		return this.getUser() + " | " + this.getMessage();
+	}
 }
