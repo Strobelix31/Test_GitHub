@@ -17,5 +17,10 @@ public class Strings {
 	}      
 	public static void main(String[] args) {
 	
+		String[] signs1 = {"F", "DO", "MOS", "MOS", "MOS", "MOS", "WES"};
+		System.out.println(isProbablyApproaching(signs1));
+	
+		String[] signs2 = {"F", "MOS", "DO", "MOS", "MOS", "MOS", "WES"};
+		System.out.println(isProbablyApproaching(signs2));
 	}	
 }
