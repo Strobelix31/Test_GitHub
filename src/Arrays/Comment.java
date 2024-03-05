@@ -6,7 +6,8 @@ import java.util.List;
 public class Comment {
 	  
 	public static void main(String[] args) {
-		   List<String> logEntries = new ArrayList<>();
+		  
+		List<String> logEntries = new ArrayList<>();
 	       logEntries.add("1. Magnetkompass");
 	       logEntries.add("2. Geschwindigkeit der Wasserströmung");
 	       logEntries.add("3. Wetter");
