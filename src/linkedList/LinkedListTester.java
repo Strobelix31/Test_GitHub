@@ -22,8 +22,21 @@ public class LinkedListTester {
 		// läuft immer vom Anfang zum Ende
 		Iterator<Integer> iterator = list.iterator();
 		while(iterator.hasNext()) {
-			System.out.println(iterator.next());
+			//System.out.println(iterator.next());
+			if(iterator.next() == 3) {
+				// System.out.println("Found 3");
+				iterator.remove();
+			}
 		}
+		// iterator muss wieder zurückgesetzt werden
+		// iterator muss wieder an den Anfang der Liste gesetzt werden
+		iterator = list.iterator();
+		while(iterator.hasNext()){
+			System.out.println(iterator.next());
+			iterator.next();
+			// iterator.next();
+		}
+	
 	}
 
 }
