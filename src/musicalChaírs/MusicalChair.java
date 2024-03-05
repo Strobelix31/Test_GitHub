@@ -32,7 +32,11 @@ public class MusicalChair {
 			Collections.rotate(this.names, distance);
 		}
 		
-
+		// Aufgabe B der Reise nach Jerusalem:
+		public void rotateAndRemove(int distance) {
+			this.rotate(distance);
+			((LinkedList<String>) this.names).removeLast();
+		}
 		
 		public String toString() {
 			Iterator<String> itr = this.names.iterator();
