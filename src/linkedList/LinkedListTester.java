@@ -1,13 +1,15 @@
 package linkedList;
 
+// import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
 public class LinkedListTester {
 	
-	public void main(String[] args) {
+	public static void main(String[] args) {
 		
+		// ArrayList: List<Integer> list = new ArrayList<Integer>();
 		List<Integer> list = new LinkedList<Integer>();
 		list.add(1);
 		list.add(2);
