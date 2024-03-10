@@ -40,7 +40,7 @@ public class MusicalChair {
 		}
 		
 		public String play(List<String> names) {
-		    if (names.isEmpty()) {
+		    if (this.names.size() == 0) {
 		        System.out.println("Keine Kandidaten vorhanden!");
 		        return null;
 		    }
@@ -48,10 +48,10 @@ public class MusicalChair {
 		    for (String name : names) {
 		        System.out.println(name);
 		    }
-		    while (names.size() > 1) {
-		        int index = ThreadLocalRandom.current().nextInt(names.size());
-		        String removedName = names.remove(index);
-		        names.add(removedName);
+		    while (this.names.size() > 1) {
+		        int index = ThreadLocalRandom.current().nextInt(this.names.size());
+		        String removedName = this.names.remove(index);
+		        this.names.add(removedName);
 		        System.out.println("Kandidaten nach Entfernen von " + removedName + ":");
 		        for (String name : names) {
 		            System.out.println(name);
