@@ -39,28 +39,16 @@ public class MusicalChair {
 			((LinkedList<String>) this.names).removeLast();
 		}
 		
-		public String play(List<String> names) {
-		    if (this.names.size() == 0) {
-		        System.out.println("Keine Kandidaten vorhanden!");
-		        return null;
-		    }
-		    System.out.println("Kandidaten:");
-		    for (String name : names) {
-		        System.out.println(name);
-		    }
-		    while (this.names.size() > 1) {
-		        int index = ThreadLocalRandom.current().nextInt(this.names.size());
-		        String removedName = this.names.remove(index);
-		        this.names.add(removedName);
-		        System.out.println("Kandidaten nach Entfernen von " + removedName + ":");
-		        for (String name : names) {
-		            System.out.println(name);
-		        }
-		    }
-		    String winner = names.get(0);
-		    System.out.println("Gewinner: " + winner);
-		    return winner;
+		public String play() {
+			if(!this.names.isEmpty()) {
+				while(this.names.size()>1) {
+				int randomNumber = ThreadLocalRandom.current().nextInt();
+				this.rotateAndRemove(randomNumber);
+				System.out.println(this.names);
+			}
 		}
+			return this.names.get(0);
+	}		
 		
 		public String toString() {
 			Iterator<String> itr = this.names.iterator();
